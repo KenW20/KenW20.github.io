@@ -41,6 +41,44 @@ a:hover {
   border: none;
 }
 
+.projects {
+  padding: 4em 0 2em 0;
+}
+
+@media screen and (max-width: 736px) {
+  .projects {
+    padding: 3em 0 1em 0;
+  }
+}
+
+.projects p {
+  margin: 0 3em 2em 0;
+}
+
+.projects h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  margin: 0 2em 1em 0;
+}
+
+.projects .inner {
+  width: 90%;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .projects .inner {
+    width: 95%;
+  }
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -49,6 +87,7 @@ a:hover {
 
 #under-construction-header {
   display: block;
+  /* display: none; */
   background-color: coral;
   color: #fff;
 }
@@ -86,7 +125,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   z-index: 2;
 }
 
-.thumbnails {
+.projects {
   display: flex;
   /* flex-flow: column; */
   align-items: stretch;
@@ -94,20 +133,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   flex-wrap: wrap;
 }
 
-.thumbnails .box {
+.projects .box {
   margin: 0 1em 2em 1em;
   padding: 5px;
   width: 30%;
 }
 
 @media screen and (max-width: 1280px) {
-  .thumbnails .box {
+  .projects .box {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 736px) {
-  .thumbnails .box {
+  .projects .box {
+    width: 100%;
+  }
+}
+
+.ideas {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ideas .box {
+  margin: 0 1em 2em 1em;
+  padding: 5px;
+  width: 30%;
+}
+
+@media screen and (max-width: 1280px) {
+  .ideas .box {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .ideas .box {
     width: 100%;
   }
 }
